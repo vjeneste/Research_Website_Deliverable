@@ -13,9 +13,9 @@ app = Flask(__name__, static_url_path='', static_folder='static')
 def about():
     return render_template("about.html")
 
-@app.route('/introduction')
+@app.route('/intro')
 def introduction():  
-    return render_template("introduction.html")
+    return render_template("intro.html")
 
 @app.route('/results')
 def results():  
