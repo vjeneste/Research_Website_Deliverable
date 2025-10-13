@@ -1,0 +1,34 @@
+<nav class="navbar navbar-expand-lg navbar-white bg-white">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Data Journalism</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/macro">Data</a>
+          </li>
+          <li> <form action="/micro" method="GET">
+            <select name="year" id="year_select">
+            </select>
+            <script>
+              const select = document.getElementById("year_select");
+              for (let year = 2015; year <= 2023; year++) {
+                const option = document.createElement("option");
+                option.value = year;
+                option.text = year;
+                select.appendChild(option);
+              }
+            </script>
+            <input type="submit" value="Submit">
+          <form>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
