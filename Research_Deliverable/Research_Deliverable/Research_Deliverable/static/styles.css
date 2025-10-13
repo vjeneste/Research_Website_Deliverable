@@ -1,6 +1,6 @@
 body{
     background-color: #cdd1da;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Times New Roman", sans-serif;
     font-optical-sizing: auto;
     font-weight: 325;
     font-style: normal;
@@ -21,4 +21,5 @@ body{
 
   .navbar-brand {
     font-weight: bold;
+   
   }

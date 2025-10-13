@@ -25,7 +25,7 @@ def results():
 def discussion():  
     return render_template("discussion.html")
 
-@app.route('/annotate_bib')
+@app.route('/annotated_bib')
 def annotated_bib():  
     return render_template("annotated_bib.html")
 
