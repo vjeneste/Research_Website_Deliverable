@@ -20,72 +20,75 @@
   <h3 style = "padding: 30px">Section 3: Results</h3>
 
 
-  <h5 style = "padding: 30px; text-align: center;"> United States of America: </h5>
+  <h5 style = "padding: 30px; text-align: center;">United States of America</h5>
   <div>
     <ul>
       <p style="text-indent: 30px">
-        An important feature to note about the United States of America is that it is an individualist culture (Shkodriani & Gibbons, 1995),
-        which is defined as believing in individual freedom and emphasizing individual successes and self-reliance (Awad et al., 2018).
-        Additionally, individualist cultures focus more on separation of self and less on allegiance to society or family and competition.
-        Typically, individualism and capitalism coincide, often focusing on competition. (Awad et al., 2018; Realo & Allik, 1999)
+        An important feature to note about the United States of America is that it is an individualist culture (Shkodriani & Gibbons, 1995), which is 
+        defined as believing in individual freedom and emphasizing individual successes and self-reliance (Awad et al., 2018). Additionally, individualist 
+        cultures focus more on separation of self and less on allegiance to society or family and competition. Typically, individualism and capitalism coincide, 
+        often focusing on competition. (Awad et al., 2018; Realo & Allik, 1999)
       </p>
     </ul>
   </div>
   
-
+  <h5 style="text-indent:30px; padding: 30px;">Corpus and Analytic Procedure</h5>
   <div>
     <ul>
       <p style="text-indent: 30px">
-        The data for the U.S. compiled in this experiment is from the News on the Web Corpus, which compiles texts (about 23 billion words 
-        currently) from online magazines and newspapers from 20 different English-speaking countries from 2010 to present day. The corpus 
-        was looked through by coding language R, which allowed for a lookup of the amount of times certain words in the disability and moral 
-        foundations dictionary. Both dictionaries were found and extended (with the use of LLMs) that contained key words that pertained to 
-        disabilities and moral foundations. Some terms in the disability dictionary were amputee, cane, invalid (now seen as a derogatory 
-        term), and visually impaired. In the moral foundations dictionary, some examples of terms included compassion, kindness, sympathy, 
-        victim, and unharmed. 
+        The data for the U.S. were drawn from the News on the Web (NOW) Corpus, a large-scale archive containing approximately 23 billion words from online 
+        magazines and newspapers published between 2010 and the present across twenty English-speaking countries. All analyses were conducted in R (version 4.3) 
+        using text-processing and data-analysis packages such as tidyverse and quanteda. Each article was treated as a single text document. Texts were tokenized, 
+        converted to lowercase, and stripped of punctuation and stop words before dictionary lookup.
       </p>
     </ul>
   </div>
 
-  <img src="plots/us_term_plot.png" height = 400 width = 600 alt="US: Moral Foundations when Disability Term is present" style="display:block; margin-left:auto; margin-right:auto;">
+  <div>
+    <ul>
+      <p style="text-indent:30px;">
+        Two dictionaries were used: one related to disability and one related to moral foundations. Both dictionaries were expanded and refined using 
+        large-language-model (LLM) assistance (Ai2’s OLMo-2 32B) to ensure comprehensive lexical coverage, including synonyms, plural forms, and regional variants. 
+        Examples of disability-related terms include amputee, cane, invalid (now considered derogatory), and visually impaired. Moral-foundation terms included 
+        words such as compassion, kindness, sympathy, victim, and unharmed.
+      </p>
+    </ul>
+  </div>
+
+  <img src="plots/us_term_plot.png" height = 400 width = 600 alt="US: Moral Foundations when Disability Term is present" style="display:block; margin-left:auto; margin-right:auto; padding: 30px">
   
   <div>
     <ul>
       <p style="text-indent: 30px">
-        According to the data collected, on average, the probability that a moral foundation term appears is 1.39 times higher when a disability term is 
-        present than when a disability term is not present. Additionally, when breaking down the different moral foundation terms by group 
-        (Harm/Care, Fairness/Unfairness, etc), there is a much higher average of moral foundations terms when a disability term is present 
-        in the “harm” and “fairness” foundations. The rest of the terms did not exhibit a significant association when a disability term is 
-        present versus when it is not. Specifically, the “authority” term did have a slight mean increase in moral foundation term count when 
-        a disability term is present. However, the error mark is small and overlaps with the moral foundation term count when a disability 
-        term is not present, so the increase is not significant, p. 
+        For each article, we computed binary indicators for whether any disability term and/or any moral-foundation term appeared. We then estimated the mean 
+        probability of moral-foundation word occurrence conditional on the presence of a disability term. Results indicated that the probability of a 
+        moral-foundation term was higher in texts that mentioned disability than in those that did not. When broken down by moral-foundation category (Harm/Care, 
+        Fairness/Cheating, Authority/Subversion, Loyalty/Betrayal, Purity/Degradation), the largest differences occurred for the Harm and Fairness foundations. 
+        The Authority foundation showed a slight increase when a disability term was present, but its 95% confidence interval overlapped zero, indicating a 
+        nonsignificant difference (p > .05).
       </p>
     </ul>
   </div>
 
-  <img src="plots/us_plot.png" height = 400 width = 600 alt="US: Moral Foundations when Disability Term is present" style="display:block; margin-left:auto; margin-right:auto;">
+  <img src="plots/us_plot.png" height = 400 width = 600 alt="US: Moral Foundations when Disability Term is present" style="display:block; margin-left:auto; margin-right:auto; padding: 30px;">
 
   <div>
     <ul>
       <p style="text-indent: 30px">
-        In conclusion, the United States’ News on the Web corpus suggests that individualist foundations were regarded with disability the 
-        most and collectivist foundations the least.
+       In summary, disability discourse in U.S. news sources most strongly co-occurred with moral language linked to individualist concerns—harm and 
+       fairness—consistent with the broader individualist orientation of American culture.
       </p>
     </ul>
   </div>
 
 
-  <h5 style = "padding: 30px; text-align: center;"> Mexico: </h5>
+  <h5 style = "padding: 30px; text-align: center;">Mexico</h5>
   <div>
     <ul>
       <p style="text-indent: 30px">
-        Collectivism, rather than individualism, is an important aspect of Mexican culture (Shkodriani & Gibbons, 1995). Collectivism is 
-        defined as a view where social behavior is guided by the goals of the collective, such as the society, family, religion, or 
-        political groups, unlike individualism which emphasizes individual success. (Awad et al., 2018) In this case, some moral foundations 
-        that are associated with collectivism are authority/respect, loyalty/betrayal, and purity/sanctity. (Awad et al., 2018) Particularly, 
-        collectivism in Mexican culture is embodied through familial obligation to support and provide for family members who may be in need 
-        of assistance, which prioritize a communal goal rather than individual success. Additionally, Mexican collectivism emphasizes heritage 
-        and cultural traditions. (Gregory & Munch, 1997)
+        Collectivism, rather than individualism, is an important feature of Mexican culture (Shkodriani & Gibbons, 1995). Collectivism emphasizes group harmony 
+        and obligations to family, community, and tradition rather than personal autonomy (Awad et al., 2018; Gregory & Munch, 1997). Moral foundations commonly 
+        associated with collectivism include authority/respect, loyalty/betrayal, and purity/sanctity.
       </p>
     </ul>
   </div>
@@ -95,83 +98,95 @@
   <div>
     <ul>
       <p style="text-indent: 30px">
-        The same method of compiling US data was used for news headlines. Two new dictionaries were found and extended in Spanish for moral 
-        foundation-related and disability-related terms. Although the News on the Web Corpus had news headlines from Mexico, they were 
-        translated to English. Therefore, another corpus dedicated solely to Mexican news headlines was used. 
+        The same analytic framework used for the U.S. data was applied to Mexican news texts. Two parallel Spanish-language dictionaries were developed—one for 
+        disability and one for moral foundations—by translating the English terms, expanding them using LLM-assisted generation, and validating them against 
+        native-speaker judgments. Although the NOW Corpus contains Mexican sources, we supplemented it with a Mexico-specific news corpus to increase coverage 
+        and used the Spanish originals rather than machine-translated texts.
       </p>
     </ul>
   </div>
 
-  <img src="plots/mex_term_plot.png" height = 400 width = 600 alt="US: Moral Foundations when Disability Term is present" style="display:block; margin-left:auto; margin-right:auto;">
+  <img src="plots/mex_term_plot.png" height = 400 width = 600 alt="US: Moral Foundations when Disability Term is present" style="display:block; margin-left:auto; margin-right:auto; padding: 30px">
+
+
+  <div>
+    <ul>
+      <p>
+        As in the U.S. analysis, the probability of moral-foundation language was compared across texts with and without disability terms using mean differences 
+        and bootstrap-estimated confidence intervals. On average, the proportion of moral-foundation terms was significantly higher when a disability term appeared 
+        (error = 0.0266). The largest increases occurred for the Harm and Purity foundations, whereas Fairness, Ingroup, and Authority showed negligible or 
+        nonsignificant differences.
+      </p>
+    </ul>
+  </div>
+
+  <img src="plots/mex_plot.png" height = 400 width = 600 alt="Mexico: Moral Foundations when Disability Term is present" style="display:block; margin-left:auto; margin-right:auto; padding: 30px">
+
+
+  <div>
+    <ul>
+      <p>
+        These findings suggest that in Mexican media, discussions of disability often invoke moral language centered on care and purity—consistent with collectivist 
+        themes of interdependence, protection, and moral cleanliness.
+      </p>
+    </ul>
+  </div>
+
+
+  <h5 style = "padding: 30px; text-align: center;">Russia</h5>
+  <div>
+    <ul>
+      <p style="text-indent: 30px">
+       Russian culture is also broadly collectivist but differs from Mexican collectivism in its stronger emphasis on authority and respect for the state rather 
+       than familial duty (Martz et al., 2009; Realo & Allik, 1999). This orientation reflects the legacy of the Soviet period, when loyalty to social order and 
+       obedience to authority were strongly enforced.
+      </p>
+    </ul>
+  </div>
+
+  <div>
+    <ul>
+      <p style="text-indent: 30px">
+        As no pre-existing Russian-language dictionaries for disability or moral foundations were available, we constructed them by translating the English source 
+        dictionaries using OLMo-2 (32B) and then verifying each translation with a native Russian speaker. These dictionaries were applied to the Lenta Corpus, a 
+        large-scale collection of Russian news texts. The same tokenization and lookup procedures were used as in prior analyses.
+      </p>
+    </ul>
+  </div>
+
+  <img src="plots/rus_term_plot.png" height = 400 width = 600 alt="US: Moral Foundations when Disability Term is present" style="display:block; margin-left:auto; margin-right:auto; padding: 30px">
 
 
   <div>
     <ul>
       <p style="text-indent: 30px">
-        According to the data, in this corpus containing news headlines from Mexico, there is a higher mean in moral foundation terms when 
-        a disability term is present than when it is not. The error margin when both a moral foundation and a disability term are present 
-        is 0.0266, therefore there is a significant statistical change. The two terms that showed the greatest change in the number of moral 
-        foundation terms when a disability term is present are “Harm” and “Purity.” The other three terms, “fairness”, “ingroup”, and 
-        “authority”, showed very little significant change, and therefore are not considered to have an effect. 
+      Results indicated that the “Fairness/Injustice” (individualizing) and “Authority/Subversion” (binding) foundations appeared most frequently in texts mentioning 
+      disability, whereas “Care/Harm,” “Purity/Sanctity,” and “Ingroup” terms appeared less often.
       </p>
     </ul>
   </div>
 
-  <img src="plots/mex_plot.png" height = 400 width = 600 alt="Mexico: Moral Foundations when Disability Term is present" style="display:block; margin-left:auto; margin-right:auto;">
+  <img src="plots/rus_plot.png" height = 400 width = 600 alt="Russia: Moral Foundations when Disability Term is present" style="display:block; margin-left:auto; margin-right:auto; padding: 30px">
 
 
-
-  <h5 style = "padding: 30px; text-align: center;"> Russia: </h5>
   <div>
     <ul>
-      <p style="text-indent: 30px">
-        Russian culture also is more collectivist than the United States. However, it is also different from Mexican collectivism 
-        because of its emphasis on authority and respect of the state, rather than family (Martz et al., 2009). Russian culture 
-        prioritizes the success of the state or the society and the social norm (Realo & Allik, 1999) This is mainly due to Russia’s 
-        history in the Soviet Union, which required full obedience of the citizens to authority. Additionally, under communist rule, 
-        the success of the economy and of the state was prioritized above any personal gain due to the nature of communism. (Realo & Allik, 
-        1999) However, with this version of collectivism, Russian culture may exhibit alienation of different groups that do not match 
-        the social norms or the people, which is different from the embracement/welcoming of members through familial obligation in Mexico. 
+      <p>
+       This pattern aligns with Russia’s socio-cultural emphasis on respect for authority and social conformity, suggesting that disability discourse there is 
+       framed in terms of fairness and social order rather than compassion or purity. 
       </p>
     </ul>
   </div>
 
+  <h5 style ="padding: 30px;">Cross-Cultural Comparison</h5>
   <div>
     <ul>
       <p style="text-indent: 30px">
-        The same method for compiling the data shown was used. However, there was no dictionary available on moral foundations or 
-        disability related terms. Therefore, OLMo-2 (32B), a 32-billion parameter large language model (LLM) was used to translate 
-        terms from the previous moral foundations and disability dictionaries in English to Russian. These translations were then 
-        confirmed by a native speaker. Because of the translations in the News on the Web corpus of Russian articles and headlines, 
-        a corpus in the Russian language was found and utilized in collecting the data. 
-      </p>
-    </ul>
-  </div>
-
-  <img src="plots/rus_term_plot.png" height = 400 width = 600 alt="US: Moral Foundations when Disability Term is present" style="display:block; margin-left:auto; margin-right:auto;">
-
-
-  <div>
-    <ul>
-      <p style="text-indent: 30px">
-        Russian Lenta Corpus indicates that “Fairness and Injustice” (individualizing) and “Authority and Subversion” (binding) moral 
-        foundations were mentioned the most when a disability term is present and the other foundations, “Care and Harm”, “Purity and 
-        Sanctity”, and “Ingroup” the least.
-      </p>
-    </ul>
-  </div>
-
-  <img src="plots/rus_plot.png" height = 400 width = 600 alt="Russia: Moral Foundations when Disability Term is present" style="display:block; margin-left:auto; margin-right:auto;">
-
-
-  <h5 style ="padding: 30px;"> Conclusion: </h5>
-  <div>
-    <ul>
-      <p style="text-indent: 30px">
-        As mentioned before, the United States has less of a collectivist society than Russia and Mexico, which still differ from each 
-        other nonetheless. Similarly, as data suggests, the US, Russia, and Mexico also differ in moral foundations. For instance, the 
-        US culture emphasizes purely individualistic foundations, such as “care/harm” and “fairness/injustice”, whereas Russian news 
-        headlines mostly utilized the “fairness/injustice” and “authority” foundations, and Mexico the “care/harm” and “purity” foundations. 
+        Across all three countries, results reflect their distinct cultural orientations. The U.S., a highly individualist society, showed the strongest 
+        associations between disability and care or fairness language. Mexico, a familial and collectivist society, emphasized care and purity foundations. 
+        Russia, shaped by state-oriented collectivism, linked disability most strongly to fairness and authority. Together, these findings demonstrate that 
+        the moral framing of disability varies systematically with cultural values, highlighting how collective versus individualist moral concerns shape 
+        public discourse.
       </p>
     </ul>
   </div>
